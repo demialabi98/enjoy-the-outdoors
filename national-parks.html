@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <title>National Parks</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mountains.html">Mountains</a></li>
+        <li><a href="national-parks.html">National Parks</a></li>
+      </ul>
+    </header>
+    <main>
+      <input type="radio" name="searchLocation" id="locationOptions" value="locations" checked onchange="" />
+      <label for="search">By Location</label>
+      <input type="radio" name="searchPark" id="parkOptions" value="parks" onchange="" />
+      <label for="search">By Type</label>
+      <br>
+      <br>
+      <label for="dropDownParkTypes">Park Type</label>
+      <select id="dropDownParkTypes" style="display: block" onchange="handleParkTypeChange();"></select>
+
+      <label for="dropDownLocations">States/Territories</label>
+      <select id="dropDownLocations" style="display: block"></select>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody id="park-tbl-body">
+          <!-- Activity options will be inserted here -->
+        </tbody>
+      </table>
+    </main>
+    <footer></footer>
+    <script src="scripts/park-type-data.js"></script>
+    <script src="scripts/location-data.js"></script>
+    <script src="scripts/national-park-data.js"></script>
+    <script src="scripts/park.js"></script>
+  </body>
+</html>
