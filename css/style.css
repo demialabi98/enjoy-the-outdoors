@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Knewave&family=Lexend:wght@200;300;400;500&family=Permanent+Marker&family=Questrial&family=Secular+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Lexend;
+}
+
+body {
+  background-image: linear-gradient(0deg, #0000005d, #0000008c), url(../images/contact.png);
+  background-size: cover;
+}
+
+.navbar__menu > li {
+  display: inline;
+}
+
+.navbar__menu {
+  text-align: ;
+  color: rgb(255, 255, 255);
+  word-spacing: 150px;
+  list-style: none;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: 1%;
+}
+
+.navbar__menu > li a {
+  text-decoration: none;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+h1 {
+  color: aliceblue;
+  font-family: Secular One;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  letter-spacing: 7px;
+  font-size: 250%;
+}
+
+p {
+  color: aliceblue;
+  margin-right: 65%;
+  margin-left: 5%;
+  font-size: smaller;
+  margin-bottom: 0%;
+}
+
+hr {
+  color: antiquewhite;
+  padding-left: 0.1em;
+}
+
+.title {
+  margin-top: -5%;
+}
+
+button {
+  margin-top: 0.5%;
+  margin-left: 5%;
+  background: transparent;
+  color: aliceblue;
+  border-color: aliceblue;
+  border-style: solid;
+  border-radius: 10px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.info {
+  margin-top: -6%;
+}
