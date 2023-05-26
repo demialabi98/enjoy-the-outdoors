@@ -17,33 +17,26 @@
     </header>
     <main>
       <div>
-        <input type="radio" name="search" id="location" />
-        <label for="search">By Location</label>
-        <input type="radio" name="search" id="location" />
-        <label for="search">By type</label>
-      </div>
-      <br />
-
-
-
-      <select name="categories" id="categories"></select>
+        <label for="dropDownMountains">Mountains</label>
+        <select id="dropDownMountains" style="display: block" onchange="handleMountainChange();"></select>
       <table id="activityTable">
         <thead>
           <tr>
             <th>Name</th>
-            <th>Address</th>
-            <th>City</th>
-            <th>State</th>
-            <th>Zip</th>
-            <th>Phone</th>
-            <th>Website</th>
+            <th>Elevation</th>
+            <th>Effort</th>
+            <th>Description</th>
+            
+            <img width = 400 height = 400 id ="mtnPhoto" src="images/" alt="">
           </tr>
         </thead>
-        <tbody>
+        <tbody id ="mtn-tbl-body" name="mtn-tbl-body">
           <!-- Activity options will be inserted here -->
         </tbody>
       </table>
     </main>
     <footer></footer>
+    <script src="scripts/mountain-data.js"></script>
+    <script src="scripts/mountain.js"></script>
   </body>
 </html>

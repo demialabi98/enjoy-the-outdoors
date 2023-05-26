@@ -1,9 +1,9 @@
 "use strict";
-const locationOptions = document.querySelector("input[name = searchLocations]:checked");
-const parkOptions = document.querySelector("input[name = searchPark]:checked");
-let parkTblbody = document.querySelector("#park-tbl-body");
+// const selectOption = document.querySelector("input[name = searchBy]:checked").value;
+let parkTblBody = document.querySelector("#park-tbl-body");
 const dropDownParkTypes = document.querySelector("#dropDownParkTypes");
 const dropDownLocations = document.querySelector("#dropDownLocations");
+
 function loadParkOptions() {
   let option = new Option("Select Park Type...");
   dropDownParkTypes.appendChild(option);
@@ -57,10 +57,10 @@ function buildParkRow(tbody, nationalPark) {
 }
 
 function buildParkTblForParkType(parkType) {
-  parkTblbody.innerHTML = "";
+  parkTblBody.innerHTML = "";
   const filteredParks = nationalParks.filter((nationalPark) => nationalPark.LocationName.includes(parkType));
   for (const nationalPark of filteredParks) {
-    buildParkRow(parkTblbody, nationalPark);
+    buildParkRow(parkTblBody, nationalPark);
   }
 }
 function handleParkTypeChange() {
@@ -69,10 +69,27 @@ function handleParkTypeChange() {
 }
 
 function buildParkTblForLocation(location) {
-  for (const nationalPark of nationalParks) {
-    buildParkRow(parkTblbody, nationalPark);
+  parkTblBody.innerHTML = "";
+  const filteredParks = nationalParks.filter((nationalPark) => nationalPark.State.includes(location));
+  for (const nationalPark of filteredParks) {
+    buildParkRow(parkTblBody, nationalPark);
   }
 }
 function handleLocationChange() {
-  const parkTypeValue = dropDownParkTypes.value;
-  buildParkTblForParkType(parkTypeValue);
+  const locationValue = dropDownLocations.value;
+  buildParkTblForLocation(locationValue);
+}
+
+function handleCheckBox(value) {
+  if (value == "locations") {
+    loadlocationOptions();
+    dropDownLocations.style.display = "block";
+    dropDownParkTypes.style.display = "none";
+  } else if (value == "parks") {
+    loadParkOptions();
+    dropDownParkTypes.style.display = "block";
+    dropDownLocations.style.display = "none";
+  }
+}
+
+handleCheckBox("locations");

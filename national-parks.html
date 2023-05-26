@@ -16,9 +16,9 @@
       </ul>
     </header>
     <main>
-      <input type="radio" name="searchLocation" id="locationOptions" value="locations" checked onchange="" />
+      <input type="radio" name="searchBy" id="locationOptions" value="locations" checked onchange="handleCheckBox(value);" />
       <label for="search">By Location</label>
-      <input type="radio" name="searchPark" id="parkOptions" value="parks" onchange="" />
+      <input type="radio" name="searchBy" id="parkOptions" value="parks" onchange="handleCheckBox(value);" />
       <label for="search">By Type</label>
       <br>
       <br>
@@ -26,7 +26,7 @@
       <select id="dropDownParkTypes" style="display: block" onchange="handleParkTypeChange();"></select>
 
       <label for="dropDownLocations">States/Territories</label>
-      <select id="dropDownLocations" style="display: block"></select>
+      <select id="dropDownLocations" style="display: block" onchange="handleLocationChange();"></select>
 
       <table>
         <thead>
@@ -39,7 +39,7 @@
             <th>Phone</th>
           </tr>
         </thead>
-        <tbody id="park-tbl-body">
+        <tbody id="park-tbl-body" name ="mtn-tbl-body">
           <!-- Activity options will be inserted here -->
         </tbody>
       </table>
