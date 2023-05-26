@@ -53,7 +53,7 @@ function buildParkRow(tbody, nationalPark) {
   cell6.innerText = nationalPark.Phone;
 
   let cell7 = row.insertCell(6);
-  cell7.innerText = nationalPark.Visit;
+  cell7.innerText = nationalPark.LocationID.toUpperCase();
 }
 
 function buildParkTblForParkType(parkType) {
