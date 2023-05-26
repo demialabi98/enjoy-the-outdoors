@@ -27,6 +27,8 @@ body {
 
 .navbar__menu > li a {
   text-decoration: none;
+  letter-spacing: 2px;
+  font-size: small;
 }
 
 a {
@@ -55,11 +57,12 @@ p {
 hr {
   color: antiquewhite;
   padding-left: 0.1em;
-  margin-top: 19% ;
+  margin-top: 20% ;
 }
 
 .title {
   margin-top: -5%;
+  letter-spacing: .5em;
 }
 
 button {
