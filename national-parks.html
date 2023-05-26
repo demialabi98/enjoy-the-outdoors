@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.classless.min.css" />
+    <link rel="stylesheet" href="css/parks.css">
     <title>National Parks</title>
   </head>
   <body>
     <header>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="mountains.html">Mountains</a></li>
-        <li><a href="national-parks.html">National Parks</a></li>
-      </ul>
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li>
+            <a href="index.html">Home
+         </a>
+          </li>
+          <li>
+            <a href="mountains.html">Mountains
+              </a>
+          </li>
+          <li><a href="national-parks.html">Parks</a></li>
+        </ul>
+      </nav>
     </header>
     <main >
       <input type="radio" name="searchBy" id="locationOptions" value="locations" checked onchange="handleCheckBox(value);" />

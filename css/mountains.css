@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(184, 206, 176);
+}
+
+.navbar__menu {
+  color: rgb(255, 255, 255);
+  word-spacing: 150px;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.navbar__menu > li a {
+  text-decoration: none
+}
+.navbar__menu > li {
+  display: inline;
+}
