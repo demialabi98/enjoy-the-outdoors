@@ -68,6 +68,11 @@ select#dropDownMountains{
   width: 10%;
   border-radius: 7px;
 }
+#mtnPhoto{
+  border-radius: 50%;
+  margin-left: 51em;
+  margin-top: -5%;
+}
 
 
 #locationOptions input {
