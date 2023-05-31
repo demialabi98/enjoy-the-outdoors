@@ -3,7 +3,7 @@
 * {
 }
 body {
-  background-image:linear-gradient(0deg, #00000000, #00000000), url("/images/mtn.5.png");
+  background-image:linear-gradient(0deg, #00000017, #00000017), url("/images/mtn.5.png");
   background-size: 100%;
   
   font-family: Lexend;
@@ -70,7 +70,7 @@ select#dropDownMountains{
 }
 #mtnPhoto{
   border-radius: 50%;
-  margin-left: 51em;
+  margin-left: 53em;
   margin-top: -5%;
 }
 
